@@ -1,46 +1,38 @@
-# Campus FixIt - Campus Issue Reporting System
+# Campus FixIt
 
-A comprehensive mobile application and backend system for students to report campus issues and administrators to manage and resolve them efficiently.
+A mobile app for reporting and managing campus issues. Students can report problems with photos, and admins can track and resolve them.
 
-![Campus FixIt](https://img.shields.io/badge/Version-1.0.0-blue) ![React Native](https://img.shields.io/badge/React%20Native-Expo-blue) ![Node.js](https://img.shields.io/badge/Node.js-Express-green) ![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
+## Features
 
-## 📱 Features
+**For Students:**
+- Register and login
+- Report issues with photos
+- Track your submitted issues
+- See status updates
+- Browse all campus issues
+- Filter by category and status
 
-### Student Features
-- ✅ User registration and login with JWT authentication
-- ✅ Create issues with title, description, category, and photo
-- ✅ View all issues raised by the student
-- ✅ Track issue status (Open, In Progress, Resolved)
-- ✅ Filter issues by category and status
-- ✅ View detailed issue information
-- ✅ Browse all campus issues
-- ✅ User profile management
+**For Admins:**
+- View all reported issues
+- Update status and add remarks
+- Set priority levels
+- Manage and delete issues
 
-### Admin Features
-- ✅ View all reported issues
-- ✅ Update issue status
-- ✅ Add remarks to issues
-- ✅ Mark issues as resolved
-- ✅ Delete issues
-- ✅ Priority management
+## Tech Stack
 
-## 🛠 Tech Stack
+**Mobile App:**
+- React Native (Expo)
+- React Navigation
+- Context API
+- Expo Image Picker
+- AsyncStorage
+- Axios
 
-### Frontend (Mobile App)
-- **Framework**: React Native with Expo
-- **Navigation**: React Navigation (Stack & Bottom Tabs)
-- **State Management**: Context API (AuthContext & IssueContext)
-- **Image Handling**: Expo Image Picker
-- **Storage**: AsyncStorage for token persistence
-- **HTTP Client**: Axios
-
-### Backend
-- **Runtime**: Node.js
-- **Framework**: Express.js
-- **Database**: MongoDB with Mongoose ODM
-- **Authentication**: JWT (JSON Web Tokens)
-- **Password Security**: bcryptjs
-- **File Upload**: Multer (Base64 images)
+**Backend:**
+- Node.js + Express
+- MongoDB + Mongoose
+- JWT authentication
+- bcryptjs
 
 ## 📁 Project Structure
 
@@ -285,58 +277,14 @@ npm install
 expo start -c
 ```
 
-## 📝 Assignment Compliance
+## Future Improvements
 
-This project fulfills all mandatory requirements:
-
-✅ **Tech Stack**
-- React Native with Expo
-- Stack & Tab Navigation
-- Context API for state management
-- Node.js + Express backend
-- MongoDB database
-- JWT Authentication
-- AsyncStorage
-- Proper API error handling
-
-✅ **Functional Requirements**
-- User registration & login
-- Issue creation with all required fields
-- Image upload capability
-- View user's issues
-- Status tracking
-- Category and status filtering
-- Admin issue management
-- Admin remarks functionality
-- Authorization middleware
-- Role-based access control
-
-✅ **Documentation**
-- Comprehensive README
-- API documentation
-- Setup instructions
-- Usage guide
-
-## 🌟 Future Enhancements (Optional)
-
-- 📧 Email notifications on status changes
-- 📲 Push notifications
-- 📊 Admin dashboard with analytics
-- 🔍 Advanced search functionality
-- 📍 Location tagging for issues
-- 📎 Multiple image uploads
-- 💬 Comments system
-- ⭐ Issue upvoting
-
-## 📄 License
-
-This project is created for educational purposes as part of a college assignment.
-
-## 👨‍💻 Author
-
-Created with ❤️ for Campus FixIt Assignment
+- Email/push notifications
+- Admin dashboard
+- Location tagging
+- Multiple images per issue
+- Comments on issues
 
 ---
 
-**Note**: This is a complete, production-ready implementation that can be deployed to a real campus environment with minimal modifications.
-# campus-fixit-app
+Built for campus issue management
